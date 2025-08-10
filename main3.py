@@ -26,7 +26,8 @@ def fake_login():
     slow_print("[*] Connecting to server...", 0.02, Fore.YELLOW)
     time.sleep(1)
     loading_bar("User authorization", 20, Fore.MAGENTA)
-    slow_print("[+] Access granted! ID: ROOT_ADMIN_1337", 0.02, Fore.GREEN)
+    id = random.randint(10000000, 999999999)
+    slow_print(f"[+] Access granted! ID: {id}", 0.02, Fore.GREEN)
 
 def port_scan():
     slow_print("[*] Scanning ports...", 0.02, Fore.YELLOW)
