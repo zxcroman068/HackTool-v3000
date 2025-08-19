@@ -68,9 +68,10 @@ def main():
     print_green("[*] Pinging dark nodes...")
     for _ in range(3):
         ip = fake_ip()
-        delay = random.randint(10, 120)
+        delay = random.randint(10, 300)
+        time.sleep(delay / 1000)
         print_green(f"Pinging {ip}... Reply from {ip}: time={delay}ms")
-        time.sleep(0.3)
+        time.sleep(1)
     print()
 
     print_green("[*] Scanning open ports...")
